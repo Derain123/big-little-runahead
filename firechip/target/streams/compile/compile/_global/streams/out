@@ -1,0 +1,62 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/FireSim.scala:133:15: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method emitSummaries,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    pllConfig.emitSummaries[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/FireSim.scala:150:83: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method referenceSinkParams,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val allDistinctRatClocks = allAdjRatClks.foldLeft(Seq(RationalClock(pllConfig.referenceSinkParams.name.get, 1, 1))) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/FireSim.scala:216:19: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method emitSummaries,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m        pllConfig.emitSummaries[0m
+[0m[[0m[33mwarn[0m] [0m[0m                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:81:5: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:89:5: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:100:89: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ports.map { p => UARTBridge(uartSyncClock, p, th.buildtopReset.asBool)(system.p) }; Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:107:5: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:156:5: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:176:5: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:183:5: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:189:87: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ports.map { p => p.traces.map(tileTrace => DromajoBridge(tileTrace)(system.p)) }; Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/BridgeBinders.scala:195:73: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ports.map { p => GroundTestBridge(th.buildtopClock, p)(system.p) }; Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/FireSim.scala:195:22: method apply in object IO is deprecated (since Chisel 3.5): chisel3.experimental.IO is deprecated, use chisel3.IO instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m      val reset_io = IO(Input(AsyncReset())).suggestName("async_reset")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/FireSim.scala:197:26: method apply in object IO is deprecated (since Chisel 3.5): chisel3.experimental.IO is deprecated, use chisel3.IO instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m      val input_clocks = IO(Input(new ClocksWithSinkParams(clockGroupEdge.sink.members)))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/TargetConfigs.scala:36:5: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m    up(BootROMLocated(x), site).map(_.copy(contentFileName = bootROMPath))[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/TargetConfigs.scala:42:26: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m  case DebugModuleKey => up(DebugModuleKey, site).map(_.copy(clockGate = false))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/TargetConfigs.scala:43:34: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m  case ChipyardPRCIControlKey => up(ChipyardPRCIControlKey, site).copy(enableTileClockGating = false)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/firechip/src/main/scala/TargetConfigs.scala:49:24: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m  case TracePortKey => up(TracePortKey, site).map(_.copy(print = true))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m5 feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0m19 warnings found[0m

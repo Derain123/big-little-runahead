@@ -1,0 +1,10 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/tracegen/src/main/scala/Configs.scala:22:16: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val prev = up(TilesLocated(InSubsystem), site)[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/tracegen/src/main/scala/Configs.scala:61:16: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val prev = up(TilesLocated(InSubsystem), site)[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/tracegen/src/main/scala/Configs.scala:97:16: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val prev = up(TilesLocated(InSubsystem), site)[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m

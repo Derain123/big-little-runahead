@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/dean/workspace/CODE/chipyard/generators/chipyard/src/main/resources/vsrc/GCDMMIOBlackBox.v,/home/dean/workspace/CODE/chipyard/generators/chipyard/target/scala-2.13/classes/vsrc/GCDMMIOBlackBox.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/dean/workspace/CODE/chipyard/generators/chipyard/src/main/resources/vsrc/spiketile.v,/home/dean/workspace/CODE/chipyard/generators/chipyard/target/scala-2.13/classes/vsrc/spiketile.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/dean/workspace/CODE/chipyard/generators/chipyard/src/main/resources/vsrc/cospike.v,/home/dean/workspace/CODE/chipyard/generators/chipyard/target/scala-2.13/classes/vsrc/cospike.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/dean/workspace/CODE/chipyard/generators/chipyard/src/main/resources/vsrc/ClockDividerN.sv,/home/dean/workspace/CODE/chipyard/generators/chipyard/target/scala-2.13/classes/vsrc/ClockDividerN.sv)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/dean/workspace/CODE/chipyard/generators/chipyard/src/main/resources/csrc/spiketile.cc,/home/dean/workspace/CODE/chipyard/generators/chipyard/target/scala-2.13/classes/csrc/spiketile.cc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/dean/workspace/CODE/chipyard/generators/chipyard/src/main/resources/csrc/cospike.cc,/home/dean/workspace/CODE/chipyard/generators/chipyard/target/scala-2.13/classes/csrc/cospike.cc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/dean/workspace/CODE/chipyard/generators/chipyard/src/main/resources/csrc/emulator.cc,/home/dean/workspace/CODE/chipyard/generators/chipyard/target/scala-2.13/classes/csrc/emulator.cc)[0m
