@@ -1,0 +1,4 @@
+[debug] [chipyard] Classpath dependencies List(testchipip, rocketchip, boom, hwacha, sifive_blocks, sifive_cache, iocell, sha3, dsptools, rocket-dsp-utils, gemmini, icenet, tracegen, cva6, nvdla, sodor, ibex, fft_generator, constellation, mempress, fetch)
+[debug] [chipyard] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'chipyard' to '/home/dean/workspace/CODE/chipyard/.bloop/chipyard.json'
+[success] Generated .bloop/chipyard.json

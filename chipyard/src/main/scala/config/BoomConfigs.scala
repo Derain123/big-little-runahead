@@ -53,3 +53,9 @@ class MediumBoomCosimConfig extends Config(
   new chipyard.config.WithTraceIO ++                             // enable the traceio
   new boom.common.WithNMediumBooms(1) ++
   new chipyard.config.AbstractConfig)
+
+class StridePrefetchBoomConfig extends Config(
+  new fetch.WithHellaCachePrefetcher(Seq(0), fetch.SingleStridedPrefetcherParams()) ++   // strided prefetcher, sits in front of the L1D$, monitors core requests to prefetching into the L1D$
+  new freechips.rocketchip.subsystem.WithNonblockingL1(4) ++                           // non-blocking L1D$, L1 prefetching only works with non-blocking L1D$
+  new boom.common.WithNLargeBooms(1) ++
+  new chipyard.config.AbstractConfig)
