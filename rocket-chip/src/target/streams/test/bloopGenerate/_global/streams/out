@@ -1,0 +1,4 @@
+[debug] [rocketchip-test] Classpath dependencies List(hardfloat, rocketMacros, cde)
+[debug] [rocketchip-test] Dependencies from configurations List(rocketchip)
+[debug] Bloop wrote the configuration of project 'rocketchip-test' to '/home/dean/workspace/CODE/chipyard/.bloop/rocketchip-test.json'
+[success] Generated .bloop/rocketchip-test.json

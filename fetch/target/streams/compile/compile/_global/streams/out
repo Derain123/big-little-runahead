@@ -1,0 +1,7 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/fetch/src/main/scala/stride.scala:17:7: method with a single empty parameter list overrides method without any parameter list[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def desc() = "Single Strided Prefetcher"[0m
+[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/dean/workspace/CODE/chipyard/generators/fetch/src/main/scala/stride.scala:106:12: method fire in class AddMethodsToReadyValid is deprecated (since Chisel 3.5): Calling this function with an empty argument list is invalid in Scala 3. Use the form without parentheses instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m  when (io.request.fire()) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

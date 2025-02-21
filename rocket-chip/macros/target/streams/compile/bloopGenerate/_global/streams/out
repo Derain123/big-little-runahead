@@ -1,0 +1,4 @@
+[debug] [rocketMacros] Classpath dependencies List()
+[debug] [rocketMacros] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'rocketMacros' to '/home/dean/workspace/CODE/chipyard/.bloop/rocketMacros.json'
+[success] Generated .bloop/rocketMacros.json

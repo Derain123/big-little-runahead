@@ -2,6 +2,8 @@ package chipyard
 
 import org.chipsalliance.cde.config.{Config}
 import freechips.rocketchip.diplomacy.{AsynchronousCrossing}
+// import fetch._  //
+// import fetch.MithHelloCachePrefetcher  //
 
 // --------------
 // Rocket Configs
@@ -132,4 +134,16 @@ class CustomIOChipTopRocketConfig extends Config(
   new chipyard.example.WithCustomChipTop ++
   new chipyard.example.WithCustomIOCells ++
   new freechips.rocketchip.subsystem.WithNBigCores(1) ++         // single rocket-core
+  new chipyard.config.AbstractConfig)
+
+class StridePrefetchRocketConfig extends Config(
+  new fetch.WithHellaCachePrefetcher(Seq(0), fetch.SingleStridedPrefetcherParams()) ++   // strided prefetcher, sits in front of the L1D$, monitors core requests to prefetching into the L1D$
+  new freechips.rocketchip.subsystem.WithNonblockingL1(4) ++                           // non-blocking L1D$, L1 prefetching only works with non-blocking L1D$
+  new freechips.rocketchip.subsystem.WithNBigCores(1) ++                               // single rocket-core
+  new chipyard.config.AbstractConfig)
+
+class NonblockingL1RocketConfig extends Config(
+  // new fetch.WithHellaCachePrefetcher(Seq(0), fetch.SingleStridedPrefetcherParams()) ++   // strided prefetcher, sits in front of the L1D$, monitors core requests to prefetching into the L1D$
+  new freechips.rocketchip.subsystem.WithNonblockingL1(4) ++                           // non-blocking L1D$, L1 prefetching only works with non-blocking L1D$
+  new freechips.rocketchip.subsystem.WithNBigCores(1) ++                               // single rocket-core
   new chipyard.config.AbstractConfig)

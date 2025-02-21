@@ -1,0 +1,4 @@
+[debug] [firechip-test] Classpath dependencies List(chipyard, targetutils, midas, firesimLib-test)
+[debug] [firechip-test] Dependencies from configurations List(firechip)
+[debug] Bloop wrote the configuration of project 'firechip-test' to '/home/dean/workspace/CODE/chipyard/.bloop/firechip-test.json'
+[success] Generated .bloop/firechip-test.json
