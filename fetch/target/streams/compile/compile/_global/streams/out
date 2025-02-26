@@ -1,4 +1,0 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/dys20011126/code/chipyard-new/generators/fetch/src/main/scala/LocalStride.scala:16:7: method with a single empty parameter list overrides method without any parameter list[0m
-[0m[[0m[33mwarn[0m] [0m[0m  def desc() = "Local Strided Prefetcher"[0m
-[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
