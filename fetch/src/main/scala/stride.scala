@@ -9,6 +9,7 @@ import freechips.rocketchip.tile._
 import freechips.rocketchip.tilelink._
 import freechips.rocketchip.subsystem.{CacheBlockBytes}
 
+
 case class SingleStridedPrefetcherParams(
     history: Int = 5, //Number of times a delta must be seen before prefetching
     ahead: Int = 2, 
@@ -103,7 +104,7 @@ class StridedPrefetcher(params: SingleStridedPrefetcherParams)(implicit p: Param
     }
   }
 
-  when (io.request.fire()) {
+  when (io.request.fire) {
     prefetch := prefetch + delta
     when ((delta_pos && (prefetch - last_snoop) < (delta << ahead_bits)) || (!delta_pos && (last_snoop - prefetch) < (delta << ahead_bits))) {
       //Only continue prefetching if delta is still same

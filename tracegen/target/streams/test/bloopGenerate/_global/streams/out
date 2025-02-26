@@ -1,4 +1,4 @@
 [debug] [tracegen-test] Classpath dependencies List(testchipip, rocketchip, sifive_cache, boom)
 [debug] [tracegen-test] Dependencies from configurations List(tracegen)
-[debug] Bloop wrote the configuration of project 'tracegen-test' to '/home/dean/workspace/CODE/chipyard/.bloop/tracegen-test.json'
+[debug] Bloop wrote the configuration of project 'tracegen-test' to '/home/dys20011126/code/chipyard-new/.bloop/tracegen-test.json'
 [success] Generated .bloop/tracegen-test.json

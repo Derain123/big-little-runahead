@@ -142,6 +142,13 @@ class StridePrefetchRocketConfig extends Config(
   new freechips.rocketchip.subsystem.WithNBigCores(1) ++                               // single rocket-core
   new chipyard.config.AbstractConfig)
 
+
+class LocalStridePrefetchRocketConfig extends Config(
+  new fetch.WithHellaCachePrefetcher(Seq(0), fetch.LocalStridedPrefetcherParams()) ++   // strided prefetcher, sits in front of the L1D$, monitors core requests to prefetching into the L1D$
+  new freechips.rocketchip.subsystem.WithNonblockingL1(4) ++                           // non-blocking L1D$, L1 prefetching only works with non-blocking L1D$
+  new freechips.rocketchip.subsystem.WithNBigCores(1) ++                               // single rocket-core
+  new chipyard.config.AbstractConfig)
+
 class NonblockingL1RocketConfig extends Config(
   // new fetch.WithHellaCachePrefetcher(Seq(0), fetch.SingleStridedPrefetcherParams()) ++   // strided prefetcher, sits in front of the L1D$, monitors core requests to prefetching into the L1D$
   new freechips.rocketchip.subsystem.WithNonblockingL1(4) ++                           // non-blocking L1D$, L1 prefetching only works with non-blocking L1D$

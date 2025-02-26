@@ -17,6 +17,7 @@ trait CanInstantiatePrefetcher {
 class Snoop(implicit val p: Parameters) extends Bundle {
   val blockBytes = p(CacheBlockBytes)
 
+  val pc    = UInt()
   val write = Bool()
   val address = UInt()
   def block = address >> log2Up(blockBytes)

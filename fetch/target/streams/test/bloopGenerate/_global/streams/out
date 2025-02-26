@@ -1,4 +1,4 @@
-[debug] [fetch-test] Classpath dependencies List(rocketchip)
-[debug] [fetch-test] Dependencies from configurations List(fetch)
-[debug] Bloop wrote the configuration of project 'fetch-test' to '/home/dean/workspace/CODE/chipyard/.bloop/fetch-test.json'
-[success] Generated .bloop/fetch-test.json
+[debug] [barf-test] Classpath dependencies List(rocketchip)
+[debug] [barf-test] Dependencies from configurations List(barf)
+[debug] Bloop wrote the configuration of project 'barf-test' to '/home/dys20011126/code/chipyard-new/.bloop/barf-test.json'
+[success] Generated .bloop/barf-test.json

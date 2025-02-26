@@ -66,6 +66,7 @@ class HellaCachePrefetchWrapperModule(pP: CanInstantiatePrefetcher, outer: Hella
   prefetcher.io.snoop.valid := ShiftRegister(io.cpu.req.fire() && !core_prefetch, 2) && !io.cpu.s2_nack && !RegNext(io.cpu.s1_kill)
   prefetcher.io.snoop.bits.address := ShiftRegister(io.cpu.req.bits.addr, 2)
   prefetcher.io.snoop.bits.write := ShiftRegister(isWrite(io.cpu.req.bits.cmd), 2)
+  prefetcher.io.snoop.bits.pc := ShiftRegister(io.cpu.req.bits.pc, 2)
 
   val req = Queue(prefetcher.io.request, 1)
   val in_flight = RegInit(false.B)
@@ -84,7 +85,7 @@ class HellaCachePrefetchWrapperModule(pP: CanInstantiatePrefetcher, outer: Hella
     cache.io.cpu.req.bits.phys := false.B
     cache.io.cpu.req.bits.no_alloc := false.B
     cache.io.cpu.req.bits.no_xcpt := false.B
-    when (cache.io.cpu.req.fire()) { in_flight := true.B }
+    when (cache.io.cpu.req.fire) { in_flight := true.B }
   }
 
   val prefetch_fire = cache.io.cpu.req.fire() && isPrefetch(cache.io.cpu.req.bits.cmd)
