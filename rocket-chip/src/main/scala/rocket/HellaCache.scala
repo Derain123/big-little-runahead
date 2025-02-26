@@ -122,7 +122,7 @@ class HellaCacheReqInternal(implicit p: Parameters) extends CoreBundle()(p) with
   val no_alloc = Bool()
   val no_xcpt = Bool()
   // add for stride prefetcher
-  val pc   = UInt(vaddrBits.W)
+  val pc   = UInt(vaddrBitsExtended.W)
 }
 
 class HellaCacheReq(implicit p: Parameters) extends HellaCacheReqInternal()(p) with HasCoreData

@@ -71,7 +71,7 @@ class LocalStridedPrefetcher(params: LocalStridedPrefetcherParams)(implicit p: P
 
   class RPTMeta extends CoreBundle {
     val state = new StrideMetadata
-    val tag   = UInt((vaddrBits - log2Ceil(params.nSets)).W)
+    val tag   = UInt((vaddrBitsExtended - log2Ceil(params.nSets)).W)
     val prev_addr = UInt(coreMaxAddrBits.W)
   }
 
