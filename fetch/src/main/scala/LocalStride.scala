@@ -81,9 +81,6 @@ class LocalStridedPrefetcher(params: LocalStridedPrefetcherParams)(implicit p: P
 
   val _meta = Wire(new RPTMeta)
   val _stride = Wire(new RPTStirde)
-
-  val prefetch = Reg(UInt())
-
   val metaSz = _meta.asUInt.getWidth
   val dataSz = _stride.asUInt.getWidth
 
@@ -93,6 +90,7 @@ class LocalStridedPrefetcher(params: LocalStridedPrefetcherParams)(implicit p: P
   _meta := DontCare
   _stride := DontCare
 
+  val prefetch = Reg(UInt(dataSz.W))
 
   // --------------------------------------------------------
   // **** Stage 0 ****
@@ -119,18 +117,19 @@ class LocalStridedPrefetcher(params: LocalStridedPrefetcherParams)(implicit p: P
   val s1_req_rprt = delta.read(s0_idx, s0_valid).asTypeOf(new RPTStirde)
   val s1_req_rmeta = meta.read(s0_idx, s0_valid).asTypeOf(new RPTMeta)
 
-  val s1_rprt = RegEnable(s1_req_rprt, s1_valid)
-  val s1_rmeta = RegEnable(s1_req_rmeta, s1_valid)
+  val s1_rprt = s1_req_rprt
+  val s1_rmeta = s1_req_rmeta
 
   val s1_stride = s1_rprt.stride
-  val s1_hit = s1_rmeta.tag === s1_tag
+  val s1_hit = (s1_rmeta.tag === s1_tag)
+  val s1_hit_valid = s1_hit & s1_valid
   val s1_prev_addr = s1_rmeta.prev_addr
   val s1_hit_state = Mux(s1_hit, s1_rmeta.state.asUInt, 0.U).asTypeOf(chiselTypeOf(StrideMetadata.onReset))
   
-  val s1_new_stride = RegNext(s1_addr) - s1_prev_addr
+  val s1_new_stride = s1_addr - s1_prev_addr
   val s1_stirde_pos = s1_addr > s1_prev_addr
   val s1_stride_corr = s1_new_stride === s1_stride
-  val (s1_can_prf, s1_new_state) = s1_hit_state.onPref(s1_stride_corr & s1_hit)
+  val (s1_can_prf, s1_new_state) = s1_hit_state.onPref(s1_stride_corr & s1_hit_valid)
   val s1_update = s1_hit_state =/= s1_new_state || s1_prev_addr =/= s1_addr
 
   // prefetch controller
